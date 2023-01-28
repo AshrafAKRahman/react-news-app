@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>The Latest News</h1>
+      <h1 className="header">The Latest News</h1>
       <Menu active={active} setActive={setActive} setCategory={setCategory} />
       <NewsGrid items={items} />
     </div>
