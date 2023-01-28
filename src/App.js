@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=gb&category=${category}&apiKey=0bbf0fae28ef47a8b3a4ee575c866001`
+      `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=gb&category=${category}&apiKey=0bbf0fae28ef47a8b3a4ee575c866001`
     )
       .then((res) => res.json())
       .then((data) => setITems(data.articles));
